@@ -4,19 +4,14 @@ public class ex01 {
 
     public static void main(String[] args) {
 
-        Integer crianca = 1;
-        Integer adolecente = 2;
-        Integer adulto = 1;
-        // Integer idade = 0;
-        Integer familia = (crianca + adolecente + adulto);
+       Integer nenem = 3;
+       Integer crianca = 1;
+       Integer jovemadulto =1;
+       Integer totalfilho = nenem + crianca + jovemadulto;
 
-        Double valor1 = 25.12;
-        Double valor2 = 15.88;
-        Double valor3 = 12.44;
-        Double total = ((crianca * 25.12) +(adolecente * 15.88) + (adulto * 12.44));
+       Double bolsanenem = (25.12 * nenem) + (15.88 * crianca) + (12.44 * jovemadulto);
 
-        String frase = String.format("Você tem um total de %s filhos " + "e vai receber R$ %.2f de bolsa", familia, total);
+       String frase =String.format("Você tem um total de %d filhos e vai receber R$%.2f de bolsa",totalfilho, bolsanenem);
         System.out.println(frase);
-
     }
 }
