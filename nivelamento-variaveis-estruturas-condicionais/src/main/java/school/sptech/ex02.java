@@ -5,16 +5,13 @@ public class ex02 {
     public static void main(String[] args) {
 
         Integer aquecimento = 5;
-        Integer exaerobico = 15;
-        Integer exmusculacao = 45;
-        Integer total = (aquecimento + exaerobico + exmusculacao);
+        Integer exaerobico = 10;
+        Integer exmusuclacao =45;
 
-        Double kalaquecimento = (aquecimento * 12.0);
-        Double kalaero = (exaerobico * 20.0);
-        Double kalmusc = (exaerobico * 25.0);
-        Double totalkal = (kalaquecimento + kalaero + kalmusc);
+        Integer calorias = ((aquecimento * 12) + (exaerobico * 20) + (exmusuclacao * 25));
+        Integer tempo = aquecimento + exaerobico + exmusuclacao;
 
-        String frase = String.format("Olá, Jorge. Você fez um total de %s minutos de exercícios " + "e perdeu cerca de % .2f calorias.", total, totalkal);
+        String frase = String.format("Olá, Jorge. Você fez um total de %d minutos de exercícios e perdeu cerca de %d calorias.", tempo, calorias);
         System.out.println(frase);
 
     }
